@@ -30,7 +30,8 @@ defineProps({ invoices: Object });
                             <td class="py-3 px-6">#{{ inv.id }}</td>
                             <td class="py-3 px-6">{{ inv.customer.name }}</td>
                             <td class="py-3 px-6">{{ inv.invoice_date }}</td>
-                            <td class="py-3 px-6 font-bold">${{ inv.total_amount }}</td>
+                            <!-- // change to Ringgit -->
+                            <td class="py-3 px-6 font-bold">RM {{ inv.total_amount }}</td>
                         </tr>
                     </tbody>
                 </table>

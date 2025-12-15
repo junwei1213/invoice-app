@@ -34,16 +34,18 @@ const showingNavigationDropdown = ref(false);
                                 class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"
                             >
                                 <NavLink
-                                    :href="route('dashboard')"
-                                    :active="route().current('dashboard')"
-                                >
-                                    Dashboard
-                                </NavLink>
-                                <NavLink
                                     :href="route('invoices.index')"
                                     :active="route().current('invoices.*')"
                                 >
                                     Invoices
+                                </NavLink>
+
+                                <!-- Add Customers Link -->
+                                <NavLink
+                                    :href="route('customers.index')"
+                                    :active="route().current('customers.*')"
+                                >
+                                    Customers
                                 </NavLink>
                             </div>
                         </div>
@@ -147,16 +149,16 @@ const showingNavigationDropdown = ref(false);
                 >
                     <div class="space-y-1 pb-3 pt-2">
                         <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('dashboard')"
-                        >
-                            Dashboard
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
                             :href="route('invoices.index')"
                             :active="route().current('invoices.*')"
                         >
                             Invoices
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('customers.index')"
+                            :active="route().current('customers.*')"
+                        >
+                            Customers
                         </ResponsiveNavLink>
                     </div>
 

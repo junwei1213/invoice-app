@@ -96,7 +96,8 @@ const submit = () => {
                 <button type="button" @click="addItem" class="mt-2 text-blue-500 hover:underline">+ Add Item</button>
 
                 <div class="flex justify-end items-center mt-6 border-t pt-4">
-                    <div class="text-2xl font-bold mr-6">Total: ${{ grandTotal.toFixed(2) }}</div>
+                    <!-- change to Ringgit -->
+                    <div class="text-2xl font-bold mr-6">Total: RM {{ grandTotal.toFixed(2) }}</div>
                     <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
                         Save Invoice
                     </button>
